@@ -7,8 +7,30 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="86dp"
         android:layout_height="203dp"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="50dp" />
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="132dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        tools:layout_editor_absoluteX="36dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
