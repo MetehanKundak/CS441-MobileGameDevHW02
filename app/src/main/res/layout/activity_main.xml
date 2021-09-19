@@ -4,24 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"><![CDATA[
+
+    //tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    ]]>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerList"
         android:layout_width="86dp"
         android:layout_height="203dp"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="383dp" />
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="389dp" /><![CDATA[
+
+    //app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    ]]>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginBottom="132dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="189dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -32,5 +41,6 @@
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        tools:layout_editor_absoluteX="36dp" />
+        tools:layout_editor_absoluteX="36dp"
+        //tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
