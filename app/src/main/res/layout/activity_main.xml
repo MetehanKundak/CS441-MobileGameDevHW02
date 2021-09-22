@@ -14,10 +14,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerList"
-        android:layout_width="86dp"
-        android:layout_height="203dp"
+        android:layout_width="191dp"
+        android:layout_height="246dp"
         tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="389dp" /><![CDATA[
+        tools:layout_editor_absoluteY="346dp" /><![CDATA[
 
     //app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintStart_toStartOf="parent" />
@@ -28,18 +28,18 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Add"
         tools:layout_editor_absoluteX="89dp"
         tools:layout_editor_absoluteY="189dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="add items"
         app:layout_constraintBottom_toTopOf="@+id/button"
         tools:layout_editor_absoluteX="36dp"
         //tools:ignore="MissingConstraints" />
