@@ -19,31 +19,42 @@
 
 
 
+
+
     ]]>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="189dp" />
+        android:layout_marginStart="268dp"
+        android:layout_marginBottom="588dp"
+        android:text="Add to List"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/Input"
+        android:id="@+id/input_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="4dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="add items"
+        android:text="Enter items for shopping list"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        tools:layout_editor_absoluteX="36dp"
+
+        tools:layout_editor_absoluteX="26dp" />
 
     <ListView
+        android:id="@+id/list_view"
         android:layout_width="409dp"
-        android:layout_height="540dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="190dp" />
+        android:layout_height="599dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" /><![CDATA[
+
     //tools:ignore="MissingConstraints" />
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
