@@ -23,6 +23,10 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 EditText editText;
 List<items> items_list = new ArrayList<>();
+int next_id;
+String input;
+//Button  click_button;
+
 
 private RecyclerView recyclerView;
 private RecyclerView.Adapter mAdapter;
@@ -40,11 +44,30 @@ private RecyclerView.LayoutManager layoutManager;
         mAdapter = new RecyleViewAdapter(items_list, MainActivity.this);
         recyclerView.setAdapter(mAdapter);
 
+        //click_button = (Button) findViewById(R.id.button);
+
         fillitemsList();
         Toast.makeText(this,"Count= " + items_list.size(), Toast.LENGTH_SHORT).show();
 
 
         editText = findViewById(R.id.editText);
+        //input = editText.toString();
+/*
+        click_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                next_id ++;
+                items new_item = new items(next_id,editText.toString());
+
+                items_list.add(new_item);
+            }
+        });
+
+*/
+
+
+
+
         editText.setOnKeyListener(new OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
@@ -54,15 +77,17 @@ private RecyclerView.LayoutManager layoutManager;
                     //your necessary codes...
 
 
+                    next_id ++;
+                    items new_item = new items(next_id,editText.getText().toString());
+                    items_list.add(new_item);
+
+
 
                     return true;
                 }
                 return false;
             }
         });
-
-
-
 
     }
 

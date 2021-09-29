@@ -49,7 +49,4 @@ public class RecyleViewAdapter extends RecyclerView.Adapter<RecyleViewAdapter.My
         }
     }
 
-
-
-
 }
