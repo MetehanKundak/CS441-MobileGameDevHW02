@@ -25,7 +25,7 @@ EditText editText;
 List<items> items_list = new ArrayList<>();
 int next_id;
 String input;
-//Button  click_button;
+//Button  deletebutton = findViewById(R.id.deletebutton);
 
 
 private RecyclerView recyclerView;
@@ -49,8 +49,19 @@ private RecyclerView.LayoutManager layoutManager;
         fillitemsList();
         Toast.makeText(this,"Count= " + items_list.size(), Toast.LENGTH_SHORT).show();
 
-
+        //Button  deletebutton = findViewById(R.id.deletebutton);
         editText = findViewById(R.id.editText);
+
+
+
+
+
+
+
+
+
+
+
         //input = editText.toString();
 /*
         click_button.setOnClickListener(new View.OnClickListener() {
